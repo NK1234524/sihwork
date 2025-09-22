@@ -1,76 +1,82 @@
-
-/* Reset and basic font */
 body {
   margin: 0;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* Container with two sections */
+
 .container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-/* Left side with background pattern */
+
 .left {
   flex: 1;
   background: url("pattern.png") no-repeat center center;
   background-size: cover;
 }
 
-/* Right side with signup form */
+
 .right {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center; 
   padding: 40px;
+  box-sizing: border-box;
 }
 
 .right img {
   margin-bottom: 20px;
+  max-width: 150px;
+  height: auto;
 }
 
-/* Signup heading */
+
 h2 {
-  font-size: 80px;
-  margin: 10px 0;  
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  font-size: 60px;
+  margin: 15px 0;  
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 100;
   color: #2c3e50;
   letter-spacing: 2px;
+  text-align: center;
 }
 
-/* Link styling */
+
+p {
+  font-size: 15px;
+  margin: 10px 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+
 a {
-  color:#2e7ac6;
+  color: #2e7ac6;
   font-weight: 500;
   text-decoration: underline; 
-  font-size:400;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 
-/* Input fields */
 .input-box {
   width: 100%;
   max-width: 320px;
   margin: 8px 0;
   padding: 12px;
-  border: 1px solid #aaa;
-  border-radius: 10px;
-  font-size: 14px;
   border: 2px solid #2c3e50;
-}
-.input-box{
-    transition: box-shadow 0.3s ,color 0.3s,transform 0.3s ;
-}
-.input-box:hover{
-    box-shadow:2px 2px 1px #2c3e50;
-    transform: scale(1.05);
+  border-radius: 8px;
+  font-size: 14px;
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 
-/* Button styling */
+.input-box:hover {
+  box-shadow: 2px 2px 1px #2c3e50;
+  transform: scale(1.03);
+}
+
+
 .btn {
   width: 100%;
   max-width: 320px;
@@ -79,38 +85,84 @@ a {
   border: 2px solid #2e7ac6;
   background: #fff;
   color: #2e7ac6;
-  border-radius: 10px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
   font-weight: 600;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.btn{
   transition: background 0.3s, color 0.3s, transform 0.3s;
 }
+
 .btn:hover {
   background: #2e7ac6;
   color: #fff;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
-/* Social icons */
+
 .social-icons {
   margin-top: 15px;
+  text-align: center;
 }
 
 .social-icons button {
   border: 2px #2c3e50 solid;
   background: none;
   cursor: pointer;
-  border-radius:20px ;
-}
-.social-icons img {
-  width: 40px;
-  margin: 5px;
+  border-radius: 15px;
+  margin: 0 5px;
 }
 
-p{
-    font-size: larger;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+.social-icons img {
+  width: 35px;
+  height: 35px;
+}
+
+/* ---------------- RESPONSIVE FIXES ---------------- */
+
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
   }
+
+  .left {
+    height: 220px; 
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  .right {
+    padding: 20px;
+  }
+
+  .input-box,
+  .btn {
+    max-width: 100%;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  .social-icons img {
+    width: 28px;
+    height: 28px;
+  }
+}
