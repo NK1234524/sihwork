@@ -1,4 +1,3 @@
-
 /* Reset and basic font */
 body {
   margin: 0;
@@ -47,7 +46,7 @@ a {
   font-weight: 500;
   text-decoration: underline; 
   font-size:400;
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 
@@ -61,6 +60,7 @@ a {
   border-radius: 10px;
   font-size: 14px;
   border: 2px solid #2c3e50;
+
 }
 .input-box{
     transition: box-shadow 0.3s ,color 0.3s,transform 0.3s ;
@@ -84,6 +84,7 @@ a {
   font-size: 16px;
   font-weight: 600;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 .btn{
   transition: background 0.3s, color 0.3s, transform 0.3s;
@@ -113,4 +114,4 @@ a {
 p{
     font-size: larger;
     font-family:Verdana, Geneva, Tahoma, sans-serif
-  }
+}
