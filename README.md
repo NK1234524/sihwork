@@ -9,4 +9,7 @@ if they not register & they are the Ist time user of the web app then they need 
 ![alt text](<Demo WEB.png>)
 
 ![alt text](<Demo Login mobile.png>)
-Mobile view :
+
+# Signup page
+![alt text](<Signup webapp.png>)
+![alt text](<Signup mobile.png>)
